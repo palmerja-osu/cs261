@@ -1,0 +1,30 @@
+1)
+8+8+1+7+16+1+15 = 56 total costs units  per 32 pushes
+= 1.75 costs units per push
+The operation heads toward C(1) complexity as N becomes larger. The total cost of 56 units are spent in the entire process of 
+performing 32 consecutive push operations on an empty array.
+
+
+2)
+260 total cost to push 32 values = 8.125 cost/push
+Because the complexity of C becomes larger when heading toward C(n^2). 260 cost units are spent in the entire process of performing 32 consecutive push operations on an empty array which starts out at capacity 8
+
+
+3)
+I think the code would fault or perform at subpar levels when trying to push n/2 then pop that on to the array (See example).
+If it is possible to shrink the array. Therefore half of the cost of units are being spent (say n/4 or even n/8). The capacity would be shrunk
+by half allowing the array to be added to the top and/or bottom which is equal to the preset size of the array. Halfing the workload of the program,
+in theory, halfs the workload needed to proform, allowing greater expansions with half used units.
+
+
+Array cap 4
+Array size 4	//Then push the array
+
+Array cap 8
+Array size 5	//Followed by a pop onto the array
+
+Array cap 4
+Array size 4    // and so on and so forth
+
+cont....
+
